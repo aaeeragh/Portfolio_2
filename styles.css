@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    padding: 50px 50px 0 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #27ff1d;
+    line-height: 1.6;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 10px 30%;
+    z-index: 100;
+    
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #27ff1d;
+    padding: 10px 15px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 0 20px 10px rgba(39, 255, 29, 0.7); /* Neon green shadow glow */
+}
+/* Hover effect for the entire nav bar */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: 48px;
+}
+
+.container h2 {
+    font-size: 36px;
+}
+
+.container p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+
+
+.image-container {
+    max-width: 500px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.my-cv-btn {
+    background-color: #27ff1d;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.my-cv-btn:hover {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 10px #27ff1d);
+}
+
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #27ff1d;
+    color: #27ff1d;
+    background-color: #27ff1d;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #about{
+    font-size: 20px;
+  }
+
+
+.typewriter  {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #27ff1d; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #27ff1d; }
+  }
+
+  /* Styling the form */
+form {
+    border: 2px solid #27ff1d; /* Green border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black background */
+}
+
+/* Styling form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #27ff1d; /* Green label text */
+}
+
+/* Input fields and text area styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #27ff1d; /* Green border for input fields */
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent black background */
+    color: #27ff1d; /* Green text inside input */
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #1fbf16; /* Slightly darker green when focused */
+}
+
+/* Button styling */
+.submit-button {
+    background-color: #27ff1d;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1fbf16; /* Darker green on hover */
+    filter: drop-shadow(0 0 10px #27ff1d);
+}
+
+/* Response message styling */
+.response-message {
+    margin-top: 20px;
+    color: #27ff1d;
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 50px;
+    background-color: #000000;
+    color: #27ff1d;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Skill container */
+.skill {
+    margin-bottom: 20px;
+}
+
+/* Skill bar container */
+.skill-bar {
+    background-color: #222222; /* Dark background for bar */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+    width: 100%; /* Full width bar */
+}
+
+/* Green skill level (percentage) */
+.skill-level {
+    background-color: #27ff1d; /* Neon green */
+    height: 100%;
+    color: #000000; /* Black text */
+    text-align: right; /* Align percentage text to the right */
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    border-radius: 5px 0 0 5px; /* Rounds left side of the bar */
+    transition: width 0.4s ease;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: #000000;
+    color: #27ff1d;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Projects grid container (Bento style) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 20px;
+}
+
+/* Old-style clickable project boxes */
+.project-box {
+    background-color: #1a1a1a;
+    border: 3px solid #27ff1d;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-box h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.project-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Hover effect for clickable boxes */
+.project-box:hover {
+    background-color: #27ff1d;
+    color: #000000;
+    border-color: #000000;
+}
+
+/* website counter */
+
+
+
+.counter-container {
+    text-align: center;
+}
+
+.view-counter {
+    font-size: 48px;
+    color: #27ff1d; /* Neon green color for the counter */
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid #27ff1d; /* Neon green border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a; /* Dark background for the counter */
+    width: 150px;
+    margin: auto;
+}
+
+/* chatroom X Live counter*/
+
+* Container for chat and counter */
+.container {
+    display: flex;
+    gap: 20px; /* Space between chat and counter */
+}
+
+/* Chat Container */
+.chat-container {
+    background-color: #1a1a1a;
+    border: 2px solid #27ff1d;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px; /* Limit the width of the chat box */
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Limit the height of the chat box */
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #27ff1d;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    color: #27ff1d;
+}
+
+.chat-input {
+    display: flex;
+}
+
+#messageInput {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: #000000;
+    color: #27ff1d;
+    border-radius: 5px 0 0 5px;
+}
+
+#sendButton {
+    border: none;
+    background-color: #27ff1d;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Counter Container */
+.counter-container {
+    background-color: #1a1a1a;
+    border: 2px solid #27ff1d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px; /* Limit the width of the counter box */
+}
+
+.view-counter {
+    font-size: 48px;
+    color: #27ff1d; /* Neon green color for the counter */
+    font-weight: bold;
+    margin-top: 20px;
+    border: 2px solid #27ff1d; /* Neon green border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000000; /* Dark background for the counter */
+}
+
